@@ -1,0 +1,15 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+.skill-front{
+    border-bottom: 1px solid #44f;
+}
+.skill-back{
+    border-bottom: 1px solid #f44;
+}
+.skill-tech{
+    border-bottom: 1px solid #393;
+}

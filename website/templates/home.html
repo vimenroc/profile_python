@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+
+{% block cuerpo %}
+
+        
+
+
+    <div class="container">
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1>Perfil de desarrollador</h1>
+                    </div>
+                    <!-- <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active">User Profile</li>
+                        </ol>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        
+        <div class="row">
+            <div class="col-md-3">
+        
+                <div class="card card-primary ">
+                    <div class="card-body box-profile">
+                        <div class="text-center">
+                            <img class="profile-user-img img-fluid img-circle" src="https://media.licdn.com/dms/image/C5603AQH2JiOovTqxbQ/profile-displayphoto-shrink_800_800/0/1661891723511?e=1693440000&v=beta&t=EqBm514A7QqlZwkdyA8oxGoJc5HiQY4G13nkpJv69zU" alt="User profile picture">
+                        </div>
+                        <h3 class="profile-username text-center">Víctor Manuel Mendoza Rocha</h3>
+                        <p class="text-muted text-center">Software Engineer</p>
+                        <ul class="list-group list-group-unbordered mb-3">
+                            <li class="list-group-item">
+                                Desarrollador con 5+ años de experiencia en desarrollo, enfocado principalmente en web, front-end y back-end.
+                            </li>
+                        </ul>
+                        <a href="https://www.linkedin.com/in/vimrc/" target=”_blank” class="btn btn-primary btn-block"><b><i class="fa-brands fa-linkedin-in"></i> LinkedIn</b></a>
+                    </div>
+                </div>
+        
+        
+                <div class="card ">
+                    <div class="card-header">
+                        <h3 class="card-title">Acerca de mí</h3>
+                    </div>
+        
+                    <div class="card-body">
+                        <strong><i class="fas fa-book mr-1"></i> Educación</strong>
+                        <p class="text-muted">
+                            Licenciatura en Ciencia Computacionales, Facultad de Ciencias Físico-Matemáticas UANL
+                        </p>
+                        <hr>
+                        <strong><i class="fas fa-map-marker-alt mr-1"></i> Locación</strong>
+                        <p class="text-muted">Monterrey, Nuevo León, México</p>
+                        <hr>
+                        <strong><i class="fas fa-pencil-alt mr-1"></i> Habilidades</strong>
+                        <p class="text-muted">
+                            <span class="tag skill-back">PHP7/8</span>
+                            <span class="tag skill-back">Python</span>
+                            <span class="tag skill-back">Java</span>
+                            <span class="tag skill-back">.NET</span>
+                            <span class="tag skill-back">MySQL</span>
+                            <span class="tag"></span>
+                            <span class="tag skill-front">Vue.js</span>
+                            <span class="tag skill-front">Node.js</span>
+                            <span class="tag skill-front">Javascript</span>
+                            <span class="tag skill-front">.NET</span>
+                            <span class="tag"></span>
+                            <span class="tag skill-tech">GIT</span>
+                            <span class="tag skill-tech">Node.js</span>
+                            <span class="tag skill-tech">CodeIgniter3/4</span>
+                            <span class="tag skill-tech">Composer</span>
+                            <span class="tag skill-tech">npm</span>
+                            <span class="tag skill-tech">YARN</span>
+                        </p>
+                        <strong><i class="fas fa-file-alt mr-1"></i>Extras</strong>
+                        <p>
+                            <ul class="list-group list-group-unbordered mb-3">
+                                <li class="list-group-item">
+                                    Español - Lengua nativa
+                                </li>
+                                <li class="list-group-item">
+                                    Inglés - Nivel profesional
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="col-md-9">
+            <div class="card">
+                <div class="card-header p-2">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a class="nav-link" href="#activity" data-toggle="tab">Experiencia</a></li>
+        
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content">
+                        <div class="active tab-pane" id="activity">
+        
+                            <div class="post">
+                                <div class="user-block">
+                                    <img class="img-circle img-bordered-sm" src="{{ url_for('static', filename='img/dev_icon.jpg') }}" alt="user image">
+                                    <span class="username">
+                                        <a href="#">Analista de Sistemas - Gobierno del Estado de Nuevo León</a>
+                                    </span>
+                                    <span class="description">2018 - 2023</span>
+                                </div>
+                                <p>
+                                    Implementación de mantenimiento de versiones de control de sistemas.
+                                    Desarrollo de sistemas internos usando diversos lenguajes y tecnologías (JAVA, PHP7, .NET, Vue.js, SQL, etc..).
+                                    
+                                </p>
+                            </div>
+        
+        
+                            <div class="post">
+                                <div class="user-block">
+                                    <img class="img-circle img-bordered-sm" src="{{ url_for('static', filename='img/dev_icon.jpg') }}" alt="user image">
+                                    <span class="username">
+                                        <a href="#">Desarrollador Web - Human Quality</a>
+                                    </span>
+                                    <span class="description">2017 - 2018</span>
+                                </div>
+                                <p>
+                                    Desarrollo de aplicaciones web, principalmente en PHP y JS.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}
