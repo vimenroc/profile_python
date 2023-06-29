@@ -9,7 +9,7 @@
         <section class="content-header">
             <div class="container-fluid">
                 <div class="row mb-2">
-                    <div class="col-sm-6">
+                    <div class="col-sm-12">
                         <h1>Perfil de desarrollador</h1>
                     </div>
                     <!-- <div class="col-sm-6">
@@ -24,8 +24,9 @@
         
         <div class="row">
             <div class="col-md-3">
-        
-                <div class="card card-primary ">
+                
+                <!-- card perfil -->
+                <div class="card">
                     <div class="card-body box-profile">
                         <div class="text-center">
                             <img class="profile-user-img img-fluid img-circle" src="https://media.licdn.com/dms/image/C5603AQH2JiOovTqxbQ/profile-displayphoto-shrink_800_800/0/1661891723511?e=1693440000&v=beta&t=EqBm514A7QqlZwkdyA8oxGoJc5HiQY4G13nkpJv69zU" alt="User profile picture">
@@ -40,8 +41,8 @@
                         <a href="https://www.linkedin.com/in/vimrc/" target=”_blank” class="btn btn-primary btn-block"><b><i class="fa-brands fa-linkedin-in"></i> LinkedIn</b></a>
                     </div>
                 </div>
-        
-        
+                <!-- ./card perfil -->
+
                 <div class="card ">
                     <div class="card-header">
                         <h3 class="card-title">Acerca de mí</h3>
@@ -57,25 +58,7 @@
                         <p class="text-muted">Monterrey, Nuevo León, México</p>
                         <hr>
                         <strong><i class="fas fa-pencil-alt mr-1"></i> Habilidades</strong>
-                        <p class="text-muted">
-                            <span class="tag skill-back">PHP7/8</span>
-                            <span class="tag skill-back">Python</span>
-                            <span class="tag skill-back">Java</span>
-                            <span class="tag skill-back">.NET</span>
-                            <span class="tag skill-back">MySQL</span>
-                            <span class="tag"></span>
-                            <span class="tag skill-front">Vue.js</span>
-                            <span class="tag skill-front">Node.js</span>
-                            <span class="tag skill-front">Javascript</span>
-                            <span class="tag skill-front">.NET</span>
-                            <span class="tag"></span>
-                            <span class="tag skill-tech">GIT</span>
-                            <span class="tag skill-tech">Node.js</span>
-                            <span class="tag skill-tech">CodeIgniter3/4</span>
-                            <span class="tag skill-tech">Composer</span>
-                            <span class="tag skill-tech">npm</span>
-                            <span class="tag skill-tech">YARN</span>
-                        </p>
+                        <p class="text-muted" id = "mad-skillz"></p>
                         <strong><i class="fas fa-file-alt mr-1"></i>Extras</strong>
                         <p>
                             <ul class="list-group list-group-unbordered mb-3">
@@ -89,20 +72,34 @@
                         </p>
                     </div>
                 </div>
+                <!-- ./card -->
+                
             </div>
         
+            
+            
+        
+            
         <div class="col-md-9">
             <div class="card">
-                <div class="card-header p-2">
-                    <ul class="nav nav-pills">
-                        <li class="nav-item"><a class="nav-link" href="#activity" data-toggle="tab">Experiencia</a></li>
-        
-                    </ul>
-                </div>
-                <div class="card-body">
-                    <div class="tab-content">
-                        <div class="active tab-pane" id="activity">
-        
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Experiencia</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false" disabled>Proyectos</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contacto</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>En construcción</button>
+                    </li>
+                  </ul>
+                  <div class="card-body">
+                    
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                             <div class="post">
                                 <div class="user-block">
                                     <img class="img-circle img-bordered-sm" src="{{ url_for('static', filename='img/dev_icon.jpg') }}" alt="user image">
@@ -117,8 +114,6 @@
                                     
                                 </p>
                             </div>
-        
-        
                             <div class="post">
                                 <div class="user-block">
                                     <img class="img-circle img-bordered-sm" src="{{ url_for('static', filename='img/dev_icon.jpg') }}" alt="user image">
@@ -132,10 +127,54 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
-                </div>
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                            
+                        </div>
+                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                            <ul class="ml-4 mb-0 fa-ul text-muted">
+                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-envelope"></i></span> vimrc.06.89@gmail.com</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+                      </div>    
+                  </div>
             </div>
         </div>
-    </div>
+    
 
+    {% endblock %}
+
+    
+    {% block sextras %}
+    <script>
+        $( document ).ready(function() {
+            console.log( "perfil dayo!" );
+            AgregarHabilidades();
+        });
+        
+        
+        function AgregarHabilidades(){
+            var back = ['PHP7/8', 'Python','Java','NET','MySQL'];
+            var front = ['Vue.js','Node.js','Javascript','.NET'];
+            var tech = ['GIT','Node.js','CodeIgniter3/4','Composer','npm','YARN'];
+            
+            $.each(back,function(i, v){
+                AgregarElementos(v, 'back');
+            });
+            $.each(front,function(i, v){
+                AgregarElementos(v, 'front');
+            });
+            $.each(tech,function(i, v){
+                AgregarElementos(v, 'tech');
+            });
+        }
+        
+        function AgregarElementos(etiqueta, tipo){
+            var contenedorLenguajes = $("#mad-skillz");
+            var elemento = `<span class="tag skill-${tipo}">${etiqueta}</span> `;
+            contenedorLenguajes.append(elemento);
+        }
+    </script>
+    
     {% endblock %}
