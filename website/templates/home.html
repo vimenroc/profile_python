@@ -1,23 +1,21 @@
 {% extends "base.html" %}
 
 {% block cuerpo %}
-
-        
-
-
     <div class="container">
         <section class="content-header">
             <div class="container-fluid">
                 <div class="row mb-2">
-                    <div class="col-sm-12">
+                    <div class="col-sm-12 d-flex">
                         <h1>Perfil de desarrollador</h1>
+                        <span class="ml-auto">
+                            <label class="switch">
+                                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+                                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+                                <input id="switch-colores" type="checkbox" class="input">
+                                <span class="slider"></span>
+                            </label>
+                        </span>
                     </div>
-                    <!-- <div class="col-sm-6">
-                        <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">User Profile</li>
-                        </ol>
-                    </div> -->
                 </div>
             </div>
         </section>
@@ -32,7 +30,7 @@
                             <img class="profile-user-img img-fluid img-circle" src="https://media.licdn.com/dms/image/C5603AQH2JiOovTqxbQ/profile-displayphoto-shrink_800_800/0/1661891723511?e=1693440000&v=beta&t=EqBm514A7QqlZwkdyA8oxGoJc5HiQY4G13nkpJv69zU" alt="User profile picture">
                         </div>
                         <h3 class="profile-username text-center">Víctor Manuel Mendoza Rocha</h3>
-                        <p class="text-muted text-center">Software Engineer</p>
+                        <p class="text-center">Software Engineer</p>
                         <ul class="list-group list-group-unbordered mb-3">
                             <li class="list-group-item">
                                 Desarrollador con 5+ años de experiencia en desarrollo, enfocado principalmente en web, front-end y back-end.
@@ -50,26 +48,21 @@
         
                     <div class="card-body">
                         <strong><i class="fas fa-book mr-1"></i> Educación</strong>
-                        <p class="text-muted">
+                        <p class="">
                             Licenciatura en Ciencia Computacionales, Facultad de Ciencias Físico-Matemáticas UANL
                         </p>
                         <hr>
                         <strong><i class="fas fa-map-marker-alt mr-1"></i> Locación</strong>
-                        <p class="text-muted">Monterrey, Nuevo León, México</p>
+                        <p class="">Monterrey, Nuevo León, México</p>
                         <hr>
                         <strong><i class="fas fa-pencil-alt mr-1"></i> Habilidades</strong>
-                        <p class="text-muted" id = "mad-skillz"></p>
-                        <strong><i class="fas fa-file-alt mr-1"></i>Extras</strong>
-                        <p>
-                            <ul class="list-group list-group-unbordered mb-3">
-                                <li class="list-group-item">
-                                    Español - Lengua nativa
-                                </li>
-                                <li class="list-group-item">
-                                    Inglés - Nivel profesional
-                                </li>
-                            </ul>
-                        </p>
+                        <p class="" id = "mad-skillz"></p>
+                        <strong><i class="fas fa-file-alt mr-1"></i> Curriculum Vitae</strong>
+                        <span class="d-flex">
+                            
+                            <a target="_blank" href="{{ url_for('static', filename='files/CV_ENG.pdf') }}" class="ml-2"><i class="fa fa-file-pdf"></i> Inglés</a>
+                            <a target="_blank" href="{{ url_for('static', filename='files/CV.pdf') }}" class="ml-auto mr-2"><i class="fa fa-file-pdf"></i> Español</a>
+                        </span>
                     </div>
                 </div>
                 <!-- ./card -->
@@ -84,61 +77,76 @@
             <div class="card">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Experiencia</button>
+                        <button class="nav-link active" id="experiencia-tab" data-bs-toggle="tab" data-bs-target="#experiencia-tab-pane" type="button" role="tab" aria-controls="experiencia-tab-pane" aria-selected="true">Experiencia</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false" disabled>Proyectos</button>
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Portfolio</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contacto</button>
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contacto</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>En construcción</button>
+                        <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Certificaciones</button>
                     </li>
-                  </ul>
-                  <div class="card-body">
-                    
-                      <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                            <div class="post">
-                                <div class="user-block">
-                                    <img class="img-circle img-bordered-sm" src="{{ url_for('static', filename='img/dev_icon.jpg') }}" alt="user image">
-                                    <span class="username">
-                                        <a href="#">Analista de Sistemas - Gobierno del Estado de Nuevo León</a>
-                                    </span>
-                                    <span class="description">2018 - 2023</span>
-                                </div>
-                                <p>
-                                    Implementación de mantenimiento de versiones de control de sistemas.
-                                    Desarrollo de sistemas internos usando diversos lenguajes y tecnologías (JAVA, PHP7, .NET, Vue.js, SQL, etc..).
-                                    
-                                </p>
-                            </div>
-                            <div class="post">
-                                <div class="user-block">
-                                    <img class="img-circle img-bordered-sm" src="{{ url_for('static', filename='img/dev_icon.jpg') }}" alt="user image">
-                                    <span class="username">
-                                        <a href="#">Desarrollador Web - Human Quality</a>
-                                    </span>
-                                    <span class="description">2017 - 2018</span>
-                                </div>
-                                <p>
-                                    Desarrollo de aplicaciones web, principalmente en PHP y JS.
-                                </p>
-                            </div>
+                </ul>
+                <div class="card-body">
+                    <div class="tab-content" id="myTabContent">
+                        
+                        <!-- Apartado de experiencia -->
+                        <div class="tab-pane fade show active" id="experiencia-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                         </div>
+                        <!-- ./Apartado de experiencia -->
+                        
+                        <!-- Apartado de portfolio -->
                         <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                            
+                            <div class="post">
+                                <div class="user-block">
+                                    
+                                    <span class="">
+                                        <h5><a href="https://fastreading.vimrc.repl.co/">Fast Reading <i class="fa fa-link"></i></a></h5>
+                                    </span>
+                                    
+                                </div>
+                                <div class="proyecto-descripción">
+                                    Sitio con enfoque en aumentar la velocidad y comprensión de la lectura.
+                                </div>
+                            </div>
                         </div>
+                        <!-- ./Apartado de portfolio -->
+                        
+                        <!-- Apartado de contacto -->
                         <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                            <ul class="ml-4 mb-0 fa-ul text-muted">
+                            <ul class="ml-4 mb-0 fa-ul">
                                 <li class="small"><span class="fa-li"><i class="fas fa-lg fa-envelope"></i></span> vimrc.06.89@gmail.com</li>
                                 
                             </ul>
                         </div>
-                        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
-                      </div>    
-                  </div>
+                        <!-- ./Apartado de contacto -->
+                        
+                        <!-- Apartado extra -->
+                        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+                            
+                            <div class="post">
+                                <div class="user-block">
+                                    
+                                    <span class="">
+                                        <h5>
+                                            <a href="https://www.efset.org/cert/soGfeh">
+                                                <i class="fa fa-certificate"></i> EF SET Certificate - Nivel C2
+                                            </a>
+                                        </h5>
+                                    </span>
+                                    
+                                </div>
+                                <div class="proyecto-descripción">
+                                    EF Standard English Test (EF SET) - Certificado de nivel de inglés.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./Apartado extra -->
+                        
+                    </div>    
+                </div>
             </div>
         </div>
     
@@ -148,11 +156,62 @@
     
     {% block sextras %}
     <script>
+        let colores = 1;
         $( document ).ready(function() {
-            console.log( "perfil dayo!" );
             AgregarHabilidades();
+            AgregarExperiencia();
+            $("#switch-colores").on("input", function(){
+                colores = CambiarColores(colores);
+            });
         });
         
+        function AgregarExperiencia(){
+            var tabExperiencia = $("#experiencia-tab-pane");
+            var experiencia = [
+                {
+                    empleador : "Gobierno del Estado de Nuevo León",
+                    tiempo : "2018 - 2023",
+                    puesto: "Analista de Sistemas",
+                    imagen: "",
+                    descripción : [
+                    "Como analista de sistemas, mi responsabilidad fue el mantenimiento y actualización de sistemas existentes, así como el desarrollo de nuevos sistemas internos.",
+                    "Agregando o administrando sistema de control de versiones, toma de requerimientos directamente con los clientes.",
+                    "Desarrollo de sistemas internos usando diversas tecnologías o lenguajes de programación.",
+                    "Desarrollo e implementación de diseño para front-end, y en ocasiones diseño desde 0.",
+                    "Configuración y mantenimiento de servidores.",
+                    ]
+                },
+                {
+                    empleador : "Human Quality",
+                    tiempo : "2017 - 2018",
+                    puesto: "Desarrollador Web",
+                    imagen: "",
+                    descripción : [
+                        "Desarrollo de aplicaciones internas, principalmente utilizando PHP y Javascript.",
+                        "Diseño de front-end",
+                    ]
+                },
+            ];
+            
+            
+            
+            experiencia.forEach(element => {
+                var tareas = $("<p>").text(element.descripción)
+                var descripciónTiempo = $("<span>").text(element.tiempo).addClass("ml-auto");
+                var descripciónPuesto = $("<span>").text(element.puesto);
+                var bloqueDescripción = $("<span>").addClass("description d-flex").append(descripciónPuesto).append(descripciónTiempo);
+                var empleadorNombre = $("<span>").addClass("username").text(element.empleador);
+                var empleadorImagen = $("<img>").addClass("img-circle img-bordered-sm").attr("src", "{{ url_for('static', filename='img/dev_icon.jpg') }}");
+                var bloqueEmpleador = $("<div></div>").addClass("user-block").append(empleadorImagen).append(empleadorNombre).append(bloqueDescripción);
+                var post = $("<div></div>").addClass("post").append(bloqueEmpleador);
+                var listaTareas = $("<ul>");
+                element.descripción.forEach(descElement => {
+                    listaTareas.append($(`<li></li>`).addClass("empleo-tarea").text(descElement));
+                });
+                post.append(listaTareas);
+                tabExperiencia.append(post);
+            });
+        }
         
         function AgregarHabilidades(){
             var back = ['PHP7/8', 'Python','Java','NET','MySQL'];
@@ -174,6 +233,22 @@
             var contenedorLenguajes = $("#mad-skillz");
             var elemento = `<span class="tag skill-${tipo}">${etiqueta}</span> `;
             contenedorLenguajes.append(elemento);
+        }
+        
+        function CambiarColores(colores){
+                var baseURL = "{{ url_for('static', filename='css/') }}";
+                var url = "";
+                if (colores == 1) {
+                    colores = 0;
+                    url = baseURL + "color_d.css";
+                }else{
+                    colores = 1;
+                    url = baseURL + "color_l.css";
+                }
+                
+            
+            $("#color").attr("href", url);
+            return colores;
         }
     </script>
     

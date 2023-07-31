@@ -1,0 +1,139 @@
+/* 
+Colores principales sacados desde:
+https://realtimecolors.com/
+Sombras y luces desde:
+https://maketintsandshades.com/
+*/
+
+:root{
+    --text: #072214;
+    --background: #f6f3ed;
+    --primary: #92e8e6;
+    --secondary: #f9e1ed;
+    --accent: #d41d6d;
+    
+    --text-rgb: 7, 34, 20;
+    --background-rgb: 213, 246, 229;
+    --primary-rgb: 146, 232, 230;
+    --secondary-rgb: 249, 225, 237;
+    --accent-rgb: 212, 29, 109;
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    --text-d1: #061f12;
+    --text-d2: #061b10;
+    --text-d3: #05180e;
+    --text-d4: #04140c;
+    --text-d5: #04110a;
+    --text-d6: #030e08;
+    --text-d7: #020a06;
+    --text-d8: #010704;
+    --text-d9: #010302;
+    --text-l1: #20382c;
+    --text-l2: #394e43;
+    --text-l3: #51645b;
+    --text-l4: #6a7a72;
+    --text-l5: #83918a;
+    --text-l6: #9ca7a1;
+    --text-l7: #b5bdb9;
+    --text-l8: #cdd3d0;
+    --text-l9: #e6e9e8;
+    
+    --background-d1: #dddbd5;
+    --background-d2: #c5c2be;
+    --background-d3: #acaaa6;
+    --background-d4: #94928e;
+    --background-d5: #7b7a77;
+    --background-d6: #62615f;
+    --background-d7: #4a4947;
+    --background-d8: #31312f;
+    --background-d9: #191818;
+    --background-l1: #f7f4ef;
+    --background-l2: #f8f5f1;
+    --background-l3: #f9f7f2;
+    --background-l4: #faf8f4;
+    --background-l5: #fbf9f6;
+    --background-l6: #fbfaf8;
+    --background-l7: #fcfbfa;
+    --background-l8: #fdfdfb;
+    --background-l9: #fefefd;
+    
+    --primary-d1: #83d1cf;
+    --primary-d2: #75bab8;
+    --primary-d3: #66a2a1;
+    --primary-d4: #588b8a;
+    --primary-d5: #497473;
+    --primary-d6: #3a5d5c;
+    --primary-d7: #2c4645;
+    --primary-d8: #1d2e2e;
+    --primary-d9: #0f1717;
+    --primary-l1: #9deae9;
+    --primary-l2: #a8edeb;
+    --primary-l3: #b3efee;
+    --primary-l4: #bef1f0;
+    --primary-l5: #c9f4f3;
+    --primary-l6: #d3f6f5;
+    --primary-l7: #def8f8;
+    --primary-l8: #e9fafa;
+    --primary-l9: #f4fdfd;
+    
+    --secondary-d1: #e0cbd5;
+    --secondary-d2: #c7b4be;
+    --secondary-d3: #ae9ea6;
+    --secondary-d4: #95878e;
+    --secondary-d5: #7d7177;
+    --secondary-d6: #645a5f;
+    --secondary-d7: #4b4347;
+    --secondary-d8: #322d2f;
+    --secondary-d9: #191618;
+    --secondary-l1: #fae4ef;
+    --secondary-l2: #fae7f1;
+    --secondary-l3: #fbeaf2;
+    --secondary-l4: #fbedf4;
+    --secondary-l5: #fcf0f6;
+    --secondary-l6: #fdf3f8;
+    --secondary-l7: #fdf6fa;
+    --secondary-l8: #fef9fb;
+    --secondary-l9: #fefcfd;
+    
+    --accent-d1: #bf1a62;
+    --accent-d2: #aa1757;
+    --accent-d3: #94144c;
+    --accent-d4: #7f1141;
+    --accent-d5: #6a0f37;
+    --accent-d6: #550c2c;
+    --accent-d7: #400921;
+    --accent-d8: #2a0616;
+    --accent-d9: #15030b;
+    --accent-l1: #d8347c;
+    --accent-l2: #dd4a8a;
+    --accent-l3: #e16199;
+    --accent-l4: #e577a7;
+    --accent-l5: #ea8eb6;
+    --accent-l6: #eea5c5;
+    --accent-l7: #f2bbd3;
+    --accent-l8: #f6d2e2;
+    --accent-l9: #fbe8f0;
+
+
+    
+}
